@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+:root {
+    --cor-mais-clara: #EBF3E8;
+    --cor-mediana: #D2E3C8;
+    --cor-terciaria: #8bdaa8;
+    --cor-mais-escura: #86A789;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    background-color: #ffffffda;
+}
+
+.navbar {
+    margin: 0 auto;
+    padding: 2% 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.navlinks {
+    color: var(--cor-terciaria);
+    margin: 0 25px;
+    font-size: 14px;
+    display: block;
+}
+
+.btn_navbar {
+    background-color: var(--cor-mais-escura);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn_navbar:hover {
+    background-color: var(--cor-terciaria);
+}
+
+.container_intro {
+    height: 60vh;
+    padding: 54px 0;
+    color: var(--cor-mais-clara);
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: var(--cor-mais-clara);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: var(--cor-mais-clara);
+    font-family: 'Poppins', sans-serif;
+}
