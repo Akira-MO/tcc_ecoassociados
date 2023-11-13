@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --cor-mais-clara: #F4E9CD;
+    --cor-mediana: #95A33E;
+    --cor-escura-verde: #808A42;
+    --cor-terciaria: #469B97;
+    --cor-mais-escura: #33545B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* CSS da navbar */
+.navbar {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+.navlinks{
+    flex: 1;
+    color: var(--cor-terciaria);
+    margin: 0 25px;
+    font-size: 14px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+} 
+
+
+
+.logo img {
+    flex: 1;
+    padding: 15px;
+    max-width: 100px;
+    border-radius: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-items: start;
+}
+
+
+.btn_navbar {
+    background-color: var(--cor-mais-escura);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn_navbar:hover {
+    background-color: var(--cor-terciaria);
+}
+
+/* CSS do início */
+.container_intro {
+    background-image: url(../assets/imagem_principal.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 50px;
+}
+
+.container_intro_quemSomos {
+    background-image: url(../assets/ecoassociados.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.container_text {
+    padding: 5%;
+    max-width: 900px;
+}
+
+.container_text h1 {
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.container_text p {
+    font-size: 14px;
+    padding: 2.5%;
+}
+
+/* CSS dos dados */
+.container_mid {
+    background-color: #fff;
+    height: 40vh;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: auto;
+}
+
+.container_mid h2 {
+    font-size: 110px;
+    color: var(--cor-mais-escura);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container_mid p {
+    color: var(--cor-terciaria);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* CSS do slide */
+.slider {
+    margin: 10px;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+
+
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #fff;
+}
+
+/* CSS geral */
+h1 {
+    color: var(--cor-mais-clara);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: var(--cor-mais-clara);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CSS footer */
+
+footer {
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    height: 10%;
+    width: 100%;
+    color: var(--cor-mais-clara);
+}
+
+#footer_content {
+    background-color: var(--cor-mais-escura);
+    display: grid;
+    grid-template-areas: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    float: right;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--cor-mediana);
+    border: 2px solid var(--cor-mais-clara);
+    border-radius: 35%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+    background-color: var(--cor-mais-clara);
+}
