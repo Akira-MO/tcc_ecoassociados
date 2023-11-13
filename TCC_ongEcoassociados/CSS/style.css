@@ -87,6 +87,14 @@ ul {
     padding: 50px;
 }
 
+.container_intro_quemSomos {
+    background-image: url(../assets/ecoassociados.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 80px;
+}
+
 .container_text {
     padding: 5%;
     max-width: 900px;
